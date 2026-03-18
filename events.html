@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parish Events - St Charles Lwanga Jinja KaloliCatholic Parish</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>St Charles Lwanga<span>Jinja Kaloli</span></h2>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mass-sacraments.html">Mass & Sacraments</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="homilies.html">Homilies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="events-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x1080/d4af37/1a2b3c?text=Parish+Celebration+Event') no-repeat center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Parish Events</h1>
+                <p class="animate-text-delay">Stay Connected with Our Community Activities</p>
+                <a href="#upcoming" class="btn-primary hero-btn animate-text-delay-2">View Upcoming Events <i class="fas fa-calendar-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="upcoming" class="upcoming-events reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Join Us</span>
+                <h2>Upcoming Events</h2>
+                <p class="section-description">Be part of our vibrant parish community</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Sunday Celebration Mass -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/800020/ffffff?text=Sunday+Mass+Celebration" alt="Sunday Mass">
+                        <div class="event-category">Worship</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Solemn Sunday Mass</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> March 24, 2024</span>
+                            <span><i class="fas fa-clock"></i> 10:00 AM</span>
+                        </div>
+                        <p class="event-description">Join us for the Solemn Sunday Mass with the Parish Choir, followed by fellowship in the parish hall.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Main Church</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Youth Fellowship Gathering -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/d4af37/1a2b3c?text=Youth+Fellowship" alt="Youth Fellowship">
+                        <div class="event-category">Youth</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Youth Night Live</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> March 29, 2024</span>
+                            <span><i class="fas fa-clock"></i> 6:00 PM</span>
+                        </div>
+                        <p class="event-description">An evening of praise, worship, and fellowship for young people. Live band, testimonies, and community.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Parish Hall</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choir Practice -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/1a2b3c/d4af37?text=Choir+Practice" alt="Choir Practice">
+                        <div class="event-category">Music</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Parish Choir Rehearsal</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> Every Wednesday</span>
+                            <span><i class="fas fa-clock"></i> 5:00 PM</span>
+                        </div>
+                        <p class="event-description">Weekly choir practice for all voices. New members always welcome to lift their voices in praise.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Music Ministry Room</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parish Fundraising Event -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/800020/d4af37?text=Fundraising+Dinner" alt="Fundraising Event">
+                        <div class="event-category">Fundraising</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Annual Parish Fundraising Dinner</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> April 6, 2024</span>
+                            <span><i class="fas fa-clock"></i> 6:30 PM</span>
+                        </div>
+                        <p class="event-description">Join us for an evening of fellowship, food, and fundraising to support parish renovation projects.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Parish Hall</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catechism Classes -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/d4af37/800020?text=Catechism+Class" alt="Catechism">
+                        <div class="event-category">Formation</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>First Communion Preparation</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> Every Sunday</span>
+                            <span><i class="fas fa-clock"></i> 9:00 AM</span>
+                        </div>
+                        <p class="event-description">Catechism classes for children preparing to receive First Holy Communion. Parents welcome.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Catechism Center</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feast Day Celebration -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/1a2b3c/800020?text=Feast+Day+Celebration" alt="Feast Day">
+                        <div class="event-category">Celebration</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Parish Feast Day - St. Joseph</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> April 28, 2024</span>
+                            <span><i class="fas fa-clock"></i> 10:00 AM</span>
+                        </div>
+                        <p class="event-description">Solemn Mass followed by procession, cultural performances, and shared meal. All are welcome!</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Parish Grounds</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lenten Retreat -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/800020/1a2b3c?text=Lenten+Retreat" alt="Lenten Retreat">
+                        <div class="event-category">Retreat</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Parish Lenten Retreat</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> April 12-14, 2024</span>
+                            <span><i class="fas fa-clock"></i> 9:00 AM Daily</span>
+                        </div>
+                        <p class="event-description">Three days of reflection, prayer, and spiritual renewal preparing for Easter.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Main Church</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catholic Men's Breakfast -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250/d4af37/1a2b3c?text=Men's+Breakfast" alt="Men's Breakfast">
+                        <div class="event-category">Fellowship</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Catholic Men's Breakfast</h3>
+                        <div class="event-datetime">
+                            <span><i class="fas fa-calendar-alt"></i> April 20, 2024</span>
+                            <span><i class="fas fa-clock"></i> 8:00 AM</span>
+                        </div>
+                        <p class="event-description">Men of the parish gather for breakfast, fellowship, and a guest speaker on faith and leadership.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> Parish Hall</span>
+                            <a href="#event-detail" class="btn-event">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-pagination">
+                <a href="#" class="pagination-link active">1</a>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <a href="#" class="pagination-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Event Section -->
+    <section class="featured-event reveal">
+        <div class="container">
+            <div class="featured-event-grid">
+                <div class="featured-event-image">
+                    <img src="https://via.placeholder.com/700x500/d4af37/800020?text=Easter+Vigil+Celebration" alt="Easter Vigil">
+                    <div class="featured-badge">Featured Event</div>
+                </div>
+                <div class="featured-event-content">
+                    <span class="subtitle">Don't Miss</span>
+                    <h2>Easter Vigil Celebration</h2>
+                    <div class="featured-datetime">
+                        <span><i class="fas fa-calendar-alt"></i> March 30, 2024</span>
+                        <span><i class="fas fa-clock"></i> 8:00 PM</span>
+                    </div>
+                    <p class="featured-description">Join us for the most solemn and beautiful liturgy of the year as we celebrate the Resurrection of our Lord. The Easter Vigil includes the Service of Light, readings from salvation history, baptism of new members, and the first Eucharist of Easter.</p>
+                    
+                    <div class="featured-highlights">
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li><i class="fas fa-fire"></i> Blessing of the New Fire</li>
+                            <li><i class="fas fa-bible"></i> Seven Readings from Scripture</li>
+                            <li><i class="fas fa-water"></i> Baptism of Catechumens</li>
+                            <li><i class="fas fa-church"></i> Solemn Eucharistic Celebration</li>
+                        </ul>
+                    </div>
+
+                    <div class="featured-schedule">
+                        <p><strong>Rehearsal:</strong> March 29, 5:00 PM (for ministers)</p>
+                        <p><strong>Potluck Reception:</strong> Following Mass in Parish Hall</p>
+                    </div>
+
+                    <div class="featured-actions">
+                        <a href="#" class="btn-primary">Join This Event <i class="fas fa-check-circle"></i></a>
+                        <a href="#" class="btn-secondary">Add to Calendar <i class="fas fa-calendar-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section class="event-calendar-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Plan Ahead</span>
+                <h2>March 2024 Calendar</h2>
+            </div>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav"><i class="fas fa-chevron-left"></i></button>
+                    <h3>March 2024</h3>
+                    <button class="calendar-nav"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="calendar-weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div class="calendar-days">
+                    <div class="calendar-day prev-month">25</div>
+                    <div class="calendar-day prev-month">26</div>
+                    <div class="calendar-day prev-month">27</div>
+                    <div class="calendar-day prev-month">28</div>
+                    <div class="calendar-day prev-month">29</div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day event-day">11</div>
+                    <div class="calendar-day event-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day event-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day event-day">28</div>
+                    <div class="calendar-day">29</div>
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day">31</div>
+                    <div class="calendar-day next-month">1</div>
+                    <div class="calendar-day next-month">2</div>
+                    <div class="calendar-day next-month">3</div>
+                    <div class="calendar-day next-month">4</div>
+                    <div class="calendar-day next-month">5</div>
+                    <div class="calendar-day next-month">6</div>
+                </div>
+            </div>
+
+            <div class="calendar-legend">
+                <span class="legend-item"><span class="legend-dot event"></span> Event Day</span>
+                <span class="legend-item"><span class="legend-dot today"></span> Today</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Gallery -->
+    <section class="past-events reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Memories</span>
+                <h2>Past Event Highlights</h2>
+            </div>
+
+            <div class="past-events-grid">
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/800020/ffffff?text=Christmas+Mass" alt="Christmas Mass">
+                    <div class="past-event-overlay">
+                        <h4>Christmas Mass 2024</h4>
+                        <p>Dec 25, 2024</p>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/d4af37/1a2b3c?text=Youth+Retreat" alt="Youth Retreat">
+                    <div class="past-event-overlay">
+                        <h4>Youth Retreat</h4>
+                        <p>Feb 10-12, 2024</p>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/1a2b3c/d4af37?text=Women's+Day" alt="Women's Day">
+                    <div class="past-event-overlay">
+                        <h4>Women's Day Celebration</h4>
+                        <p>March 8, 2024</p>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/800020/d4af37?text=Parish+Picnic" alt="Parish Picnic">
+                    <div class="past-event-overlay">
+                        <h4>Annual Parish Picnic</h4>
+                        <p>Jan 20, 2024</p>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/d4af37/800020?text=Confirmation" alt="Confirmation">
+                    <div class="past-event-overlay">
+                        <h4>Confirmation Mass</h4>
+                        <p>Feb 24, 2024</p>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="https://via.placeholder.com/400x300/1a2b3c/800020?text=Choir+Concert" alt="Choir Concert">
+                    <div class="past-event-overlay">
+                        <h4>Choir Christmas Concert</h4>
+                        <p>Dec 15, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <a href="/gallery.html" class="btn-primary">View Full Gallery <i class="fas fa-images"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Stream Section -->
+    <section class="live-stream-section reveal">
+        <div class="container">
+            <div class="live-stream-grid">
+                <div class="live-stream-content">
+                    <span class="subtitle">Can't Attend in Person?</span>
+                    <h2>Watch Live Parish Events</h2>
+                    <p>Many of our events and Masses are live-streamed so you can participate from wherever you are. Subscribe to our YouTube channel to get notified when we go live.</p>
+                    <div class="upcoming-live">
+                        <h4>Next Live Stream:</h4>
+                        <p><i class="fas fa-calendar-alt"></i> Easter Vigil - March 30, 8:00 PM</p>
+                        <p><i class="fas fa-calendar-alt"></i> Sunday Mass - March 31, 10:00 AM</p>
+                    </div>
+                    <a href="#" class="btn-primary" onclick="window.open('https://youtube.com', '_blank')"><i class="fab fa-youtube"></i> Subscribe to YouTube</a>
+                </div>
+                <div class="live-stream-video">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/d4af37/1a2b3c?text=Live+Stream+Event" alt="Live Stream">
+                        <a href="#" class="play-button" onclick="window.open('https://youtube.com', '_blank')">
+                            <i class="fas fa-play"></i>
+                        </a>
+                        <div class="live-badge">LIVE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Involvement Section -->
+    <section class="community-involvement reveal">
+        <div class="container">
+            <div class="involvement-grid">
+                <div class="involvement-item">
+                    <div class="involvement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Fellowship</h3>
+                    <p>Build lasting friendships and grow together in faith.</p>
+                </div>
+                <div class="involvement-item">
+                    <div class="involvement-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Regular Activities</h3>
+                    <p>Something happening every day of the week.</p>
+                </div>
+                <div class="involvement-item">
+                    <div class="involvement-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>All Are Welcome</h3>
+                    <p>No matter where you are in your faith journey.</p>
+                </div>
+            </div>
+            <div class="involvement-message">
+                <p>There's always something happening at Mutungo Catholic Parish. From worship to fellowship, service to celebration — you belong here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="events-cta reveal">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Be part of our parish life</h2>
+                <p>Come and experience the joy of community. There's a place for you here.</p>
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn-primary btn-large">Contact Parish <i class="fas fa-envelope"></i></a>
+                    <a href="#upcoming" class="btn-outline btn-large">Join an Event <i class="fas fa-calendar-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Jinja Kaloli Parish</h3>
+                    <p>Building a Christ-centered community rooted in faith, love, and service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kawempe – Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@catholic.ug</li>
+                    </ul>
+                </div>
+                <div class="footer-mass">
+                    <h4>Mass Times</h4>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Sun: 8am, 10am, 6pm</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 7am, 12:30pm</li>
+                        <li><i class="fas fa-clock"></i> Sat: 5pm (Vigil)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 St Charles Lwanga Jinja Kaloli Catholic Parish. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
