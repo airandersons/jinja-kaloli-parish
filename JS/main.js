@@ -335,3 +335,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Mutungo Catholic Parish website initialized successfully!');
 });
+
+
+
+// ===== LIGHTBOX FUNCTIONALITY =====
+let lightboxImages = [];
+let currentImageIndex = 0;
+
+// Initialize lightbox images array
+document.addEventListener('DOMContentLoaded', function() {
+    // Collect all gallery images
+    const galleryItems = document.querySelectorAll('.gallery-item img, .featured-item img');
+    galleryItems.forEach((img, index) => {
+        lightboxImages.push({
+            src: img.src,
+            alt: img.alt,
+            caption: img.nextElementSibling ? img.nextElementSibling.querySelector('h3')?.textContent || '' : ''
+        });
+    });
+});
+
+// Open lightbox
+window.openLightbox = function(index) {
+    currentImageIndex = index;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-image');
+    const caption = document.getElementById('lightbox-caption');
+    
+    lightboxImg.src = lightboxImages[index].src;
+    caption.innerHTML = lightboxImages[index].caption;
+    
+    lightbox.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+// Close lightbox
+window.closeLightbox = function() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Change image
+window.changeImage = function(direction) {
+    currentImageIndex += direction;
+    
+    if (currentImageIndex >= lightboxImages.length) {
+        currentImageIndex = 0;
+    } else if (currentImageIndex < 0) {
+        currentImageIndex = lightboxImages.length - 1;
+    }
+    
+    const lightboxImg = document.getElementById('lightbox-image');
+    const caption = document.getElementById('lightbox-caption');
+    
+    lightboxImg.src = lightboxImages[currentImageIndex].src;
+    caption.innerHTML = lightboxImages[currentImageIndex].caption;
+}
+
+// Keyboard navigation for lightbox
+document.addEventListener('keydown', function(e) {
+    if (document.getElementById('lightbox').style.display === 'block') {
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            changeImage(1);
+        }
+    }
+});
+
+// Close lightbox when clicking outside image
+document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLightbox();
+    }
+});
