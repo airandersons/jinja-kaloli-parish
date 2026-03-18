@@ -1485,3 +1485,543 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+/* ===== MASS & SACRAMENTS PAGE STYLES ===== */
+
+/* Mass Hero Section */
+.mass-hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    margin-top: 80px;
+}
+
+.mass-hero .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: slideUpFade 1s ease;
+}
+
+.mass-hero .hero-content p {
+    font-size: 1.5rem;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    animation: slideUpFade 1s ease 0.2s both;
+}
+
+/* Mass Schedule Section */
+.mass-schedule {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.schedule-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.schedule-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--burgundy));
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 1rem;
+}
+
+.card-header i {
+    font-size: 2rem;
+    color: var(--gold);
+    background: linear-gradient(135deg, var(--gold-light), transparent);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    color: var(--deep-blue);
+}
+
+.schedule-times {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.time-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--off-white);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.time-item:hover {
+    background: linear-gradient(135deg, var(--gold-light), var(--white));
+    transform: translateX(5px);
+}
+
+.time-item.highlight {
+    background: linear-gradient(135deg, var(--gold-light), var(--white));
+    border-left: 4px solid var(--gold);
+}
+
+.time-item i {
+    color: var(--burgundy);
+    width: 20px;
+    font-size: 1rem;
+}
+
+.time-item .time {
+    font-weight: 600;
+    color: var(--deep-blue);
+    flex: 1;
+}
+
+.time-item .label {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Sunday Mass specific */
+.sunday-mass .card-header i {
+    color: var(--gold);
+}
+
+/* Confession Card specific */
+.confession-card .card-header i {
+    color: var(--burgundy);
+}
+
+/* Adoration Card specific */
+.adoration-card .card-header i {
+    color: var(--deep-blue);
+}
+
+/* Sacraments Grid Section */
+.sacraments-grid-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.sacraments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.sacrament-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--gray-light);
+}
+
+.sacrament-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--gold);
+}
+
+.sacrament-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--burgundy));
+    transition: var(--transition);
+}
+
+.sacrament-card:hover::after {
+    width: 100%;
+}
+
+.sacrament-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--gold-light), var(--off-white));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.sacrament-card:hover .sacrament-icon {
+    background: linear-gradient(135deg, var(--gold), var(--burgundy));
+    transform: rotateY(180deg);
+}
+
+.sacrament-card:hover .sacrament-icon i {
+    color: var(--white);
+}
+
+.sacrament-icon i {
+    font-size: 2.5rem;
+    color: var(--burgundy);
+    transition: var(--transition);
+}
+
+.sacrament-card h3 {
+    margin-bottom: 1rem;
+    color: var(--deep-blue);
+}
+
+.sacrament-card p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.learn-more {
+    color: var(--gold);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.learn-more i {
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.sacrament-card:hover .learn-more i {
+    transform: translateX(5px);
+}
+
+/* Sacrament Details Section */
+.sacrament-details {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+}
+
+.sacrament-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.sacrament-detail-card.reverse {
+    direction: rtl;
+}
+
+.sacrament-detail-card.reverse .detail-content {
+    direction: ltr;
+}
+
+.detail-image {
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.sacrament-detail-card:hover .detail-image img {
+    transform: scale(1.05);
+}
+
+.detail-content {
+    padding: 3rem;
+}
+
+.detail-content h3 {
+    font-size: 2rem;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.detail-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+}
+
+.detail-content h4 {
+    color: var(--burgundy);
+    margin: 1.5rem 0 1rem;
+}
+
+.detail-content ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.detail-content ul li {
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detail-content ul li i {
+    color: var(--gold);
+}
+
+.contact-info {
+    background: var(--off-white);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--gold);
+}
+
+.contact-info i {
+    color: var(--burgundy);
+    margin-right: 0.5rem;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--gold), var(--burgundy));
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-small:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Sacrament CTA Section */
+.sacrament-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--deep-blue), var(--burgundy));
+    color: var(--white);
+    text-align: center;
+}
+
+.sacrament-cta .cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sacrament-cta .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Live Mass Section Alternative */
+.live-mass-section-alt {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.live-mass-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.live-mass-text h2 {
+    font-size: 2.5rem;
+    color: var(--deep-blue);
+    margin: 0.5rem 0 1rem;
+}
+
+.live-schedule {
+    margin-top: 2rem;
+}
+
+.live-schedule p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.live-schedule i {
+    color: var(--gold);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sacraments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sacrament-detail-card,
+    .sacrament-detail-card.reverse,
+    .live-mass-wrapper {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    
+    .detail-image {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mass-hero .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .mass-hero .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .sacraments-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .time-item {
+        flex-wrap: wrap;
+    }
+    
+    .time-item .time {
+        flex: 100%;
+        order: -1;
+    }
+    
+    .detail-content {
+        padding: 2rem;
+    }
+    
+    .detail-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .sacrament-cta .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mass-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .time-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .time-item i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Animation for sacrament cards */
+@keyframes cardPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sacrament-card:active {
+    animation: cardPulse 0.3s ease;
+}
+
+/* Print styles for sacraments page */
+@media print {
+    .mass-hero {
+        height: auto;
+        color: black;
+        background: none;
+    }
+    
+    .schedule-card,
+    .sacrament-card {
+        break-inside: avoid;
+    }
+}
