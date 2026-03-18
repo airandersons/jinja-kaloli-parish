@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - St Charles Lwanga Jinja Kaloli Catholic Parish</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>St Charles Lwanga<span>Jinja Kaloli</span></h2>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mass-sacraments.html">Mass & Sacraments</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="homilies.html">Homilies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080/d4af37/1a2b3c?text=Mutungo+Church+Exterior') no-repeat center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Contact Us</h1>
+                <p class="animate-text-delay">We are here to welcome and assist you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Get in Touch</span>
+                <h2>Parish Contact Details</h2>
+                <p class="section-description">We're always here to listen and help</p>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Kawempe – Kampala, Uganda</p>
+                    <p class="direction-link"><a href="#map" class="text-link">Get Directions <i class="fas fa-arrow-right"></i></a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Numbers</h3>
+                    <p>+256 123 456 789</p>
+                    <p>+256 987 654 321</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>info@catholic.ug</p>
+                    <p>parishoffice@catholic.ug</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map Section -->
+    <section class="contact-form-section reveal">
+        <div class="container">
+            <div class="form-map-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <p>We'll get back to you as soon as possible</p>
+                    
+                    <form id="contactForm" class="contact-form" onsubmit="return validateForm('contactForm')">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <div class="input-icon">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <div class="input-icon">
+                                <i class="fas fa-pencil-alt"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Map -->
+                <div id="map" class="map-container">
+                    <h3>Find Us Here</h3>
+                    <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753623318528!2d32.616528!3d0.313437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb6b8f5b3b6b%3A0x8f5b3b6b!2sMutungo%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="map-address">
+                        <i class="fas fa-map-pin"></i>
+                        <p>Jinja Kaloli Parish, Kampala, Uganda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Action Section -->
+    <section class="quick-action reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Reach Us Instantly</span>
+                <h2>Quick Ways to Connect</h2>
+            </div>
+
+            <div class="action-grid">
+                <a href="tel:+256123456789" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Now</h3>
+                    <p>+256 123 456 789</p>
+                    <span class="action-link">Click to Call <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="mailto:info@mutungocatholic.ug" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@catholic.ug</p>
+                    <span class="action-link">Send Email <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#map" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Visit Parish</h3>
+                    <p>Kawempe – Kampala</p>
+                    <span class="action-link">Get Directions <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parish Office Note -->
+    <section class="office-note reveal">
+        <div class="container">
+            <div class="office-note-grid">
+                <div class="office-image">
+                    <img src="https://via.placeholder.com/500x400/d4af37/800020?text=Parish+Office" alt="Parish Office">
+                </div>
+                <div class="office-content">
+                    <span class="subtitle">We're Here for You</span>
+                    <h2>Parish Office</h2>
+                    <p>Our parish office is open to assist you with sacraments, guidance, and any inquiries. Whether you're looking to register as a parishioner, prepare for a sacrament, or simply have a question, our friendly staff is ready to welcome you.</p>
+                    
+                    <div class="office-features">
+                        <div class="office-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sacrament registration</span>
+                        </div>
+                        <div class="office-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Parish registration</span>
+                        </div>
+                        <div class="office-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Counseling & guidance</span>
+                        </div>
+                        <div class="office-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Document requests</span>
+                        </div>
+                    </div>
+
+                    <p class="office-invite">Feel free to visit or reach out – you are always welcome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Quick Answers</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>How do I register as a parishioner?</h4>
+                    </div>
+                    <p>Visit the parish office during working hours with your baptismal certificate and identification. Our staff will guide you through the simple registration process.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>How can I request a baptismal certificate?</h4>
+                    </div>
+                    <p>Contact the parish office via phone or email. Certificates can be picked up in person or mailed to you for a small fee.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>Do you offer marriage preparation courses?</h4>
+                    </div>
+                    <p>Yes, we offer regular marriage preparation programs. Contact the parish office at least six months before your intended wedding date.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>How do I arrange a sick visit or anointing?</h4>
+                    </div>
+                    <p>Call the parish office anytime for emergencies. For planned visits, please give us at least 24 hours notice.</p>
+                </div>
+            </div>
+
+            <div class="faq-more">
+                <p>Have another question? <a href="#contactForm">Contact us directly</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="contact-cta reveal">
+        <div class="container">
+            <div class="cta-content">
+                <h2>We look forward to hearing from you</h2>
+                <p>Whether you have a question, need guidance, or just want to say hello – we're here for you.</p>
+                <div class="cta-buttons">
+                    <a href="#contactForm" class="btn-primary btn-large">Send a Message <i class="fas fa-paper-plane"></i></a>
+                    <a href="#map" class="btn-outline btn-large">Visit Us <i class="fas fa-map-marker-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>St Charles Lwanga Jinja Kaloli</h3>
+                    <p>Building a Christ-centered community rooted in faith, love, and service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kawempe – Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@catholic.ug</li>
+                    </ul>
+                </div>
+                <div class="footer-mass">
+                    <h4>Mass Times</h4>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Sun: 8am, 10am, 6pm</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 7am, 12:30pm</li>
+                        <li><i class="fas fa-clock"></i> Sat: 5pm (Vigil)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 St Charles Lwanga Jinja Kaloli Catholic Parish. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
