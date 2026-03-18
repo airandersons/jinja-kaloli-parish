@@ -4611,3 +4611,626 @@ img {
 .gallery-item:nth-child(4) { animation-delay: 0.4s; }
 .gallery-item:nth-child(5) { animation-delay: 0.5s; }
 .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+
+
+
+/* ===== HOMILIES PAGE STYLES ===== */
+
+/* Homilies Hero Section */
+.homilies-hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    margin-top: 80px;
+}
+
+.homilies-hero .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: slideUpFade 1s ease;
+}
+
+.homilies-hero .hero-content p {
+    font-size: 1.5rem;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    animation: slideUpFade 1s ease 0.2s both;
+}
+
+/* Homilies Introduction */
+.homilies-intro {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.intro-content .lead {
+    font-size: 1.2rem;
+    color: var(--burgundy);
+    font-weight: 500;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.intro-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    transition: var(--transition);
+}
+
+.intro-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Search and Filter Section */
+.search-filter {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+}
+
+.search-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.search-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    font-size: 1.1rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: var(--white);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-select {
+    padding: 0.8rem 2rem 0.8rem 1rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    background: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--deep-blue);
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 180px;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+    border-color: var(--gold);
+    outline: none;
+}
+
+/* Featured Homily */
+.featured-homily {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.featured-homily-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.featured-homily-image {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.featured-homily-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.featured-homily:hover .featured-homily-image img {
+    transform: scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--gold), var(--burgundy));
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.featured-homily-content {
+    padding: 3rem;
+}
+
+.featured-homily-content h2 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    color: var(--deep-blue);
+}
+
+.homily-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.homily-meta i {
+    color: var(--gold);
+    margin-right: 0.5rem;
+}
+
+.featured-excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+.featured-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Homilies Grid */
+.homilies-grid-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+}
+
+.homilies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.homily-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.homily-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.homily-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.homily-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.homily-card:hover .homily-card-image img {
+    transform: scale(1.1);
+}
+
+.homily-date-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, var(--gold), var(--burgundy));
+    color: var(--white);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.homily-card-content {
+    padding: 1.5rem;
+}
+
+.homily-card-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--deep-blue);
+    font-size: 1.2rem;
+}
+
+.homily-card-meta {
+    margin-bottom: 1rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.homily-card-meta i {
+    color: var(--gold);
+    margin-right: 0.3rem;
+}
+
+.homily-excerpt {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--gold);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+}
+
+.read-more i {
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    color: var(--burgundy);
+    gap: 0.5rem;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Quote Section */
+.homily-quote {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--deep-blue), var(--deep-blue-light));
+    color: var(--white);
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.quote-icon-large {
+    font-size: 4rem;
+    color: var(--gold);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+}
+
+.quote-text {
+    font-size: 1.8rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.quote-author {
+    font-size: 1.1rem;
+    color: var(--gold);
+}
+
+/* Full Homily Section */
+.full-homily {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.full-homily-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+}
+
+.full-homily-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.full-homily-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--deep-blue);
+}
+
+.full-homily-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.full-homily-meta i {
+    color: var(--gold);
+    margin-right: 0.5rem;
+}
+
+.full-homily-content {
+    line-height: 1.9;
+    color: var(--deep-blue);
+}
+
+.homily-intro {
+    color: var(--burgundy);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--off-white);
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+}
+
+.full-homily-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.full-homily-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-light);
+}
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.share-buttons span {
+    color: var(--gray);
+}
+
+.share-btn {
+    width: 40px;
+    height: 40px;
+    background: var(--off-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--deep-blue);
+    transition: var(--transition);
+}
+
+.share-btn:hover {
+    background: var(--gold);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* Subscription Section */
+.homily-subscription {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+}
+
+.subscription-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+}
+
+.subscription-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--deep-blue);
+}
+
+.subscription-content p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.subscription-form .form-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.subscription-form input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.privacy-note {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.privacy-note i {
+    color: var(--gold);
+    margin-right: 0.3rem;
+}
+
+/* Homilies CTA */
+.homilies-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--gold), var(--burgundy));
+    color: var(--white);
+    text-align: center;
+}
+
+.homilies-cta .cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.homilies-cta .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .homilies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .featured-homily-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+    }
+    
+    .filter-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .homilies-hero .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .homilies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-actions {
+        flex-direction: column;
+    }
+    
+    .full-homily-container {
+        padding: 1.5rem;
+    }
+    
+    .full-homily-header h2 {
+        font-size: 2rem;
+    }
+    
+    .full-homily-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .subscription-form .form-group {
+        flex-direction: column;
+    }
+    
+    .quote-text {
+        font-size: 1.5rem;
+    }
+    
+    .homilies-cta .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .homilies-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .featured-homily-content {
+        padding: 1.5rem;
+    }
+    
+    .homily-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .share-buttons {
+        justify-content: center;
+    }
+    
+    .subscription-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .homilies-hero,
+    .search-filter,
+    .featured-actions,
+    .share-buttons,
+    .homily-subscription,
+    .homilies-cta,
+    .footer {
+        display: none;
+    }
+    
+    .full-homily-container {
+        box-shadow: none;
+        padding: 0;
+    }
+}
